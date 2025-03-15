@@ -3126,6 +3126,8 @@ input, select, textarea {
 
 					.gallery a img {
 						height: 20rem;
+						width: 100%;
+						object-fit: cover;
 					}
 
 					.gallery a.landscape img {
@@ -3135,6 +3137,22 @@ input, select, textarea {
 					.gallery a.portrait img {
 						height: 30rem;
 					}
+
+			.gallery .modal .inner {
+				width: 95vw;
+				height: 85vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.gallery .modal .inner img {
+				max-height: 85vh;
+				max-width: 95vw;
+				width: auto;
+				height: auto;
+				object-fit: contain;
+			}
 
 		}
 

@@ -287,5 +287,11 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+			document.querySelector('.dropdown > a').addEventListener('click', function(e) {
+				e.preventDefault(); // Prevent default link behavior
+				this.nextElementSibling.classList.toggle('show'); // Toggle dropdown visibility
+			});
+		</script>
 	</body>
 </html>

@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Paradigm Shift by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
@@ -12,179 +12,280 @@
 		<meta name="description" content="Transform your walks into powerful memory tools with Winking Elephant" />
 		<meta name="keywords" content="memory technique, walking corridors, memory palace, spatial memory" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Inline Styles for Fixed Navigation and Dropdown -->
+		<style>
+			/* Fixed Navigation Bar - minimal & modern like Apple */
+			#fixed-nav {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background: rgba(255, 255, 255, 0.95);
+				box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+				z-index: 1000;
+				padding: 1rem 0;
+			}
+			#fixed-nav ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-align: center;
+			}
+			#fixed-nav li {
+				display: inline-block;
+				margin: 0 1.5rem;
+			}
+			#fixed-nav a {
+				text-decoration: none;
+				color: #000;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				font-size: 0.9rem;
+				padding: 0.5rem 1rem;
+				transition: color 0.3s ease;
+			}
+			#fixed-nav a:hover {
+				color: #49fcd4;
+			}
+			/* Dropdown Styles */
+			.dropdown {
+				position: relative;
+			}
+			.dropdown-menu {
+				display: none;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				background: rgba(255, 255, 255, 0.95);
+				box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+				z-index: 1001;
+				width: 150px;
+				text-align: center;
+			}
+			.dropdown:hover .dropdown-menu {
+				display: block;
+			}
+			.dropdown-menu li {
+				display: block;
+				margin: 0;
+			}
+			.dropdown-menu a {
+				display: block;
+				padding: 0.5rem 1rem;
+				color: #000;
+				text-decoration: none;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				font-size: 0.9rem;
+			}
+			.dropdown-menu a:hover {
+				color: #49fcd4;
+			}
+			/* Ensure main content is pushed below the fixed nav */
+			#wrapper {
+				margin-top: 80px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
+		<!-- Fixed Navigation Bar -->
+		<nav id="fixed-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li class="dropdown">
+					<a>Resources</a>
+					<ul class="dropdown-menu">
+						<li><a href="books/books.html">Books</a></li>
+						<!-- <li><a href="youtube/youtube.html">Youtube</a></li>
+						<li><a href="blogs/blogs.html">Blogs</a></li> -->
+					</ul>
+				</li>
+				<!-- <li><a href="downloads.html">Downloads</a></li> -->
+			</ul>
+		</nav>
+
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
+			<!-- Intro Section -->
+			<section class="intro">
+				<header>
+					<h1>Winking Elephant</h1>
+					<p>Transform your walks into powerful memory corridors</p>
+					<ul class="actions">
+						<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+					</ul>
+				</header>
+				<div class="content">
+					<span class="image fill" data-position="center">
+						<img src="images/walking-path.jpg" alt="Roads turn into Memory Corridors" />
+					</span>
+				</div>
+			</section>
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
-							<h1>Winking Elephant</h1>
-							<p>Transform your walks into powerful memory corridors</p>
-							<ul class="actions">
-								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<span class="image fill" data-position="center"><img src="images/walking-path.jpg" alt="Roads turn into Memory Corridors" /></span>
-						</div>
-					</section>
+			<!-- Create Your Own Memory Journey -->
+			<section id="first">
+				<header>
+					<h2>Create Your Own Memory Journey</h2>
+				</header>
+				<div class="content">
+					<p><strong>Imagine walking through your favorite places</strong> while building a personalized memory system. Winking Elephant helps you transform ordinary walks into extraordinary memory journeys, creating lasting connections between locations and knowledge.</p>
+				</div>
+			</section>
 
-				<!-- Section -->
-					<section id="first">
-						<header>
-							<h2>Create Your Own Memory Journey</h2>
-						</header>
-						<div class="content">
-							<p><strong>Imagine walking through your favorite places</strong> while building a personalized memory system. Winking Elephant helps you transform ordinary walks into extraordinary memory journeys, creating lasting connections between locations and knowledge.</p>
-							<span class="image main"><img src="images/memory-concept.jpg" alt="Memory concept visualization" /></span>
-						</div>
-					</section>
+			<!-- Why Choose Winking Elephant? -->
+			<section>
+				<header>
+					<h2>Why Choose Winking Elephant?</h2>
+				</header>
+				<div class="content">
+					<p><strong>Harness the power of spatial memory</strong> to enhance your learning and recall abilities.</p>
+					<ul class="feature-icons">
+						<li class="icon solid fa-walking">Personal Memory Corridors</li>
+						<li class="icon solid fa-brain">Natural Learning</li>
+						<li class="icon solid fa-map-marker-alt">Memory Pegs</li>
+						<li class="icon solid fa-route">Custom Journeys</li>
+						<li class="icon solid fa-sync">Regular Practice</li>
+						<li class="icon solid fa-lightbulb">Enhanced Recall</li>
+					</ul>
+					<p>Our unique approach combines the ancient method of loci with modern walking routines, helping you create powerful memory associations that last.</p>
+				</div>
+			</section>
 
-				<!-- Section -->
+			<!-- How It Works -->
+			<section>
+				<header>
+					<h2>How It Works</h2>
+				</header>
+				<div class="content">
+					<p><strong>Three simple steps</strong> to transform your walks into memory tools.</p>
+
+					<!-- Step 1 -->
 					<section>
 						<header>
-							<h2>Why Choose Winking Elephant?</h2>
+							<h3>1. Record and Upload your walks</h3>
+							<p>Choose your favorite walking path and identify distinctive locations that can serve as memory pegs.</p>
 						</header>
 						<div class="content">
-							<p><strong>Harness the power of spatial memory</strong> to enhance your learning and recall abilities.</p>
-							<ul class="feature-icons">
-								<li class="icon solid fa-walking">Personal Memory Corridors</li>
-								<li class="icon solid fa-brain">Natural Learning</li>
-								<li class="icon solid fa-map-marker-alt">Memory Pegs</li>
-								<li class="icon solid fa-route">Custom Journeys</li>
-								<li class="icon solid fa-sync">Regular Practice</li>
-								<li class="icon solid fa-lightbulb">Enhanced Recall</li>
-							</ul>
-							<p>Our unique approach combines the ancient method of loci with modern walking routines, helping you create powerful memory associations that last.</p>
+							<div class="gallery">
+								<a href="images/gallery/fulls/map-route.jpg" class="landscape">
+									<img src="images/gallery/fulls/map-route.jpg" alt="Map your route" />
+								</a>
+							</div>
 						</div>
 					</section>
 
-				<!-- Section -->
+					<!-- Step 2 -->
 					<section>
 						<header>
-							<h2>How It Works</h2>
+							<h3>2. Set Memory Pegs</h3>
+							<p>Mark significant spots along your route that will serve as anchors for your memories.</p>
 						</header>
 						<div class="content">
-							<p><strong>Three simple steps</strong> to transform your walks into memory tools.</p>
-
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>1. Record and Upload your walks</h3>
-										<p>Choose your favorite walking path and identify distinctive locations that can serve as memory pegs.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/map-route.jpg" class="landscape"><img src="images/gallery/fulls/map-route.jpg" alt="Map your route" /></a>
-										</div>
-									</div>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>2. Set Memory Pegs</h3>
-										<p>Mark significant spots along your route that will serve as anchors for your memories.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/memory-pegs.jpg" class="landscape"><img src="images/gallery/fulls/memory-pegs.jpg" alt="Memory pegs" /></a>
-										</div>
-									</div>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>3. Build Associations</h3>
-										<p>Connect your memories to specific locations, creating strong mental links that aid recall.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/associations.jpg" class="landscape"><img src="images/gallery/fulls/associations.jpg" alt="Building associations" /></a>
-										</div>
-									</div>
-								</section>
-
+							<div class="gallery">
+								<a href="images/gallery/fulls/memory-pegs.jpg" class="landscape">
+									<img src="images/gallery/fulls/memory-pegs.jpg" alt="Memory pegs" />
+								</a>
+							</div>
 						</div>
 					</section>
 
-				<!-- Section -->
+					<!-- Step 3 -->
 					<section>
 						<header>
-							<h2>Start Your Memory Journey Today</h2>
+							<h3>3. Build Associations</h3>
+							<p>Connect your memories to specific locations, creating strong mental links that aid recall.</p>
 						</header>
 						<div class="content">
-							<p><strong>Ready to transform your walks?</strong> Join Winking Elephant and discover the power of spatial memory.</p>
-							<ul class="actions">
-								<li><a href="#" class="button primary large">Get Started</a></li>
-								<li><a href="#" class="button large">Learn More</a></li>
-							</ul>
+							<div class="gallery">
+								<a href="images/gallery/fulls/associations.jpg" class="landscape">
+									<img src="images/gallery/fulls/associations.jpg" alt="Building associations" />
+								</a>
+							</div>
 						</div>
 					</section>
+				</div>
+			</section>
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Get in touch</h2>
-						</header>
-						<div class="content">
-							<p><strong>Have questions?</strong> We'd love to hear from you and help you get started with your memory journey.</p>
-							<form>
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
-								</ul>
-							</form>
+			<!-- Call to Action -->
+			<!-- <section>
+				<header>
+					<h2>Start Your Memory Journey Today</h2>
+				</header>
+				<div class="content">
+					<p><strong>Ready to transform your walks?</strong> Join Winking Elephant and discover the power of spatial memory.</p>
+					<ul class="actions">
+						<li><a href="#" class="button primary large">Get Started</a></li>
+						<li><a href="#" class="button large">Learn More</a></li>
+					</ul>
+				</div>
+			</section> -->
+
+			<!-- Get in Touch -->
+			<section>
+				<header>
+					<h2>Get in touch</h2>
+				</header>
+				<!-- <div class="content">
+					<p><strong>Have questions?</strong> We'd love to hear from you and help you get started with your memory journey.</p>
+					<form>
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+							</div>
 						</div>
-						<footer>
-							<ul class="items">
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="button primary" /></li>
+						</ul>
+					</form>
+				</div> -->
+				<footer>
+					<ul class="items">
+						<li>
+							<h3>Email</h3>
+							<a href="#">elephantwinking@gmail.com</a>
+						</li>
+						<li>
+							<h3>Social</h3>
+							<ul class="icons">
 								<li>
-									<h3>Email</h3>
-									<a href="#">elephantwinking@gmail.com</a>
-								</li>
-								<li>
-									<h3>Social</h3>
-									<ul class="icons">
-										<li><a href="https://www.instagram.com/winking_elephant/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									</ul>
-								</li>
-								<li>
-									<h3>Creator</h3>
-									<div style="line-height: 1;">
-										<p class="author-name" style="font-size: 1.4em; font-weight: 700; margin-bottom: 0.1em; letter-spacing: 0;">Sanjay RG</p>
-										<a href="https://x.com/iamsanjayrg" target="_blank" class="icon brands fa-x-twitter" style="font-size: 0.9em; color: #666;">Let's connect? @iamsanjayrg</a>
-									</div>
+									<a href="https://www.instagram.com/winking_elephant/" target="_blank" class="icon brands fa-instagram">
+										<span class="label">Instagram</span>
+									</a>
 								</li>
 							</ul>
-						</footer>
-					</section>
+						</li>
+						<li>
+							<h3>Creator</h3>
+							<div style="line-height: 1;">
+								<p class="author-name" style="font-size: 1.4em; font-weight: 700;">Sanjay RG</p>
+								<a href="https://x.com/iamsanjayrg" target="_blank" class="icon brands fa-x-twitter">
+									Let's connect? @iamsanjayrg
+								</a>
+							</div>
+						</li>
+					</ul>
+				</footer>
+			</section>
 
-				<!-- Copyright -->
-					<div class="copyright">&copy; 2025 Winking Elephant. All rights reserved.
-
-			</div>
+			<!-- Copyright -->
+			<div class="copyright">© 2025 Winking Elephant. All rights reserved.</div>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>

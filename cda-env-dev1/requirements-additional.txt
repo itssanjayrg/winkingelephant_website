@@ -1,0 +1,4 @@
+snowflake-snowpark-python
+structlog
+black[d]
+pytest

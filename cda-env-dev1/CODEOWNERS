@@ -1,0 +1,10 @@
+# Code owners for our application
+# documentation: https://docs.gitlab.com/ee/user/project/codeowners/
+#
+
+[Release Management] @release-management-approval
+.gitlab-ci.yml
+CODEOWNERS
+Dockerfile
+backend.tf
+/backends/*

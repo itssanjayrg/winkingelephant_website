@@ -1,0 +1,7 @@
+bucket         = "aws-use1-deployments-s3-terraform-state-cda-0001"
+key            = "dev1/terraform.tfstate"
+region         = "us-east-1"
+dynamodb_table = "aws-use1-deployments-ddb-tf-state-locks-cda-0001"
+assume_role    = {
+     role_arn = "arn:aws:iam::730335651733:role/aws-gbl-prd-role-tf-state-role-0001"
+ }
